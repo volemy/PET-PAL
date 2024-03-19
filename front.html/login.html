@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="CSS/login.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Google Sign-In script -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <!-- Google Sign-In meta tag -->
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="login-form">
+          <div class="input-group">
+            <input type="email" id="email" placeholder="Email">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="input-group">
+            <input type="password" id="password" placeholder="Password">
+            <i class="fas fa-lock"></i>
+          </div>
+          <div class="google-login">
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+          </div>
+          <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
+
+<!-----java for google sign in---->
+
+<script>
+  function onSignIn(googleUser) {
+  // Get user profile information
+  var profile = googleUser.getBasicProfile();
+  var userEmail = profile.getEmail();
+  // Implement your login logic using the userEmail
+  alert('Logged in with Google account: ' + userEmail);
+  }
+</script>

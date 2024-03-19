@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Sitting Requests</title>
+    <link rel="stylesheet" href="CSS/pet_profile.css">
+</head>
+<body>
+    <div class="container">
+        <h2>My Pet Sitting Requests</h2>
+        <div class="profile">
+            {% for request in pet_requests %}
+            <div class="request">
+                <h3>{{ request.pet_name }}</h3>
+                <p><strong>Type of Pet:</strong> {{ request.pet_type }}</p>
+                <p><strong>Special Instructions:</strong> {{ request.special_instructions }}</p>
+                <p><strong>Preferred Dates:</strong> {{ request.preferred_dates }}</p>
+                <!-- Add more fields as needed -->
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

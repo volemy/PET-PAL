@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Sitting Request Form</title>
+    <link rel="stylesheet" href="CSS/pet.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Pet Sitting Request Form</h2>
+        <form id="pet-sitting-form" action="submit.php" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="pet-name">Pet's Name:</label>
+                <input type="text" id="pet-name" name="pet-name" required>
+            </div>
+            <div class="form-group">
+                <label for="pet-type">Type of Pet:</label>
+                <input type="text" id="pet-type" name="pet-type" required>
+            </div>
+            <div class="form-group">
+                <label for="special-instructions">Special Instructions:</label>
+                <textarea id="special-instructions" name="special-instructions"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="preferred-dates">Preferred Dates:</label>
+                <input type="date" id="preferred-dates" name="preferred-dates" required>
+            </div>
+            <div class="form-group">
+                <label for="pet-image">Upload Pictures of Your Pet:</label>
+                <input type="file" id="pet-image" name="pet-image" accept="image/*" multiple>
+                <small>Allowed file types: JPG, JPEG, PNG. Maximum file size: 5MB each.</small>
+            </div>
+            <!-- Add more form fields as needed -->
+            <div class="form-group">
+                <button type="submit">Submit Request</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

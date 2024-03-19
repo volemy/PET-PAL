@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="CSS/register.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title">
+            Registration Form
+        </div>
+        <div class="form">
+            <div class="Data-input">
+                <label for="name">First Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="Data-input">
+                <label for="name">Last Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="Data-input">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="Data-input">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="Data-input">
+                <label for="password">Confirm Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="Data-input">
+                <label for="gender">Gender:</label>
+                <div class="custom_select">
+                <Value option="select" id="select" name="select" required>
+                    <select>
+                        <option Value="">Select</option>
+                        <option Value="male">Male</option>
+                        <option Value="female">Female</option>
+                    </select>
+                </div>
+             </div>
+             <div class="Data-input">
+                <label for="phone-number">Phone Number:</label>
+                <input type="text" id="Phone-number" name="Phone-number" required>
+            </div>
+            <div class="Data-input">
+                <label for="address">Address:</label>
+                <textarea id="address" class="textarea" name="address"></textarea>
+            </div>
+            <div class="Data-input">
+                <label for="postal-code">Postal Code:</label>
+                <input type="text" id="Postal-code" name="Postal-code" required>
+            </div>
+            <div class="Data-input terms">
+                <label for="checkbox">
+                    <input type="checkbox" id="terms_checkbox" name="terms_check" required>
+                    <span class="checkmark"></span>
+                </label>
+                <p>Agreed To Terms and Conditions</p>
+            </div>
+            <div class="Data-input">
+                <button type="submit">Register</button>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
